@@ -6,7 +6,7 @@ selectStudentButton.addEventListener('click', () => {
   fetch('http://localhost:3000/get-random-person')
     .then(response => response.json())
     .then(student => {
-		selectedStudentName.textContent = `${student.Ad} ${student.Soyad}`;
+		selectedStudentName.textContent = `${student.Name} ${student.Surname}`;
         selectedStudentEmail.textContent = `${student.Email}`;
 		selectStudent();
     })
