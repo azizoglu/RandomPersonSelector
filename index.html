@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Random Person Selector App</title>
+	<style>
+        body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 20px;
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #ccc;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+button {
+	font-size: 18px;
+	padding: 10px 20px;
+	background-color: #008CBA;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #006080;
+}
+
+.student-info {
+	margin-top: 50px;
+	padding: 20px;
+	background-color: #f7f7f7;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #ccc;
+}
+
+.student-info h2 {
+	margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 10px;
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Random Person Selector App</h1>
+		<button id="select-student-button">Select Random Person</button>
+		<div class="student-info">
+			<h2>Lucky Person</h2>
+			<p><strong>Name Surname:</strong> <span id="student-name"></span></p>
+			<p><strong>Email:</strong> <span id="student-email"></span></p>
+		</div>
+		<footer>© 2023 Gökhan Azizoğlu</footer>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
